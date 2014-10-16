@@ -17,7 +17,9 @@ public class Cd implements Serializable {
 	private String year;
 	private double price;
 	
-	
+	public Cd(){
+		
+	}
 	public Cd(int categoryId, String title, String artist, String year,
 			 double price) {
 		this.categoryId = categoryId;

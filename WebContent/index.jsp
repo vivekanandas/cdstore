@@ -592,6 +592,12 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 		<div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
 	</div>
 </div>
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div> 
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div>
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div>
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div>
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div>
+<div class="item"><div class="product"><div class="image"><a href="product-details.html"><img src="images/product/Thriller.jpg" alt="img" class="img-responsive"></a></div><div class="description"><h4><a href="product-details.html">Thriller</a></h4><p>Michael Jackson</p><span class="size">1982</span> </div><div class="price"><span>50</span> </div><div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart </span> </a> </div></div></div>
     </div>
     <!--/.productslider--> 
     
@@ -687,14 +693,14 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 <script src="assets/js/idangerous.swiper-2.1.min.js"></script> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.2.0/bootbox.min.js"></script>
 <script>
-  var mySwiper = new Swiper('.swiper-container',{
-	pagination: '.box-pagination',
- keyboardControl: true,
-    paginationClickable: true,
-    slidesPerView: 'auto',
-	autoResize:true,
-	resizeReInit:true,
-  })
+//   var mySwiper = new Swiper('.swiper-container',{
+// 	pagination: '.box-pagination',
+//  keyboardControl: true,
+//     paginationClickable: true,
+//     slidesPerView: 'auto',
+// 	autoResize:true,
+// 	resizeReInit:true,
+//   })
   
   	 $('.prevControl').on('click', function(e){
     e.preventDefault()
@@ -721,18 +727,16 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 				});
 				
 			});
+			$(".cat").on('click',function(){
+		  		//alert($(this).data('category'));
+		  		cd.retrive($(this).data('category'));	
+		  	});
 			
 		}
 		else{
 			alert('unknown error');
 		}
 	});
-  	
-  	$(".cat").on('click',function(){
-  		alert($(this).data('category'));
-  		cd.retrive($(this).data('category'));	
-  	});
-  	
  });
   </script> 
 
